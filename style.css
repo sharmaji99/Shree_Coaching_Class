@@ -1,114 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f6f8;
-      color: #333;
-    }
+  font-family: 'Inter', sans-serif;
+  background: #eef2f5;
+  color: #333;
+  line-height: 1.6;
+}
 
-    header {
-      background: #004aad;
-      color: white;
-      padding: 30px;
-      text-align: center;
-    }
+header {
+  background: linear-gradient(90deg, #004aad, #0078d7);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-    section {
-      padding: 20px;
-      margin: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-    h2 {
-      color: #004aad;
-      margin-bottom: 10px;
-    }
+header p {
+  font-size: 1.2rem;
+}
 
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #004aad;
-      color: white;
-    }
+section {
+  padding: 30px 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
 
-    .student-card {
-      display: flex;
-      align-items: center;
-      background-color: #f0f8ff;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+h2 {
+  color: #004aad;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
 
-    .student-card img {
-      width: 150px;
-      border-radius: 8px;
-      margin-right: 20px;
-      object-fit: cover;
-    }
+.student-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f1f9ff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
 
-    .student-info h3 {
-      margin: 0 0 5px;
-      color: #004aad;
-    }
+.student-card:hover {
+  transform: scale(1.02);
+}
 
-    .results ul {
-      list-style: none;
-      padding-left: 0;
-    }
+.student-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 3px solid #004aad;
+}
 
-    .results li {
-      background: #e9f0fa;
-      margin: 8px 0;
-      padding: 10px 12px;
-      border-left: 4px solid #004aad;
-      font-size: 1rem;
-    }
+.student-info h3 {
+  color: #004aad;
+  margin-bottom: 5px;
+}
 
-    .form-section form {
-      max-width: 400px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+.results ul {
+  list-style: none;
+  padding: 0;
+}
 
-    form input, form button, form select {
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
+.results li {
+  background: #e9f3ff;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-left: 5px solid #004aad;
+  border-radius: 5px;
+}
 
-    form button {
-      background: #004aad;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+.faculty p {
+  margin-bottom: 12px;
+  background: #f0f4ff;
+  padding: 10px 15px;
+  border-left: 4px solid #004aad;
+  border-radius: 5px;
+}
 
-    form button:hover {
-      background: #00307a;
-    }
+.why-us ul {
+  list-style: none;
+  padding: 0;
+}
 
-    #form-message {
-      text-align: center;
-      color: green;
-      margin-top: 10px;
-    }
+.why-us li {
+  background: #f8faff;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-left: 5px solid #28a745;
+  border-radius: 5px;
+}
 
-    .fee-info {
-      background: #f9f9f9;
-      padding: 10px;
-      margin-top: 10px;
-      border-left: 4px solid #004aad;
-      font-size: 1rem;
-    }
+.form-section form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-    .contact p, .faculty p {
-      line-height: 1.6;
-    }
+form input, form button, form select {
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #004aad;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #00307a;
+}
+
+.fee-info {
+  background: #f8fbff;
+  border-left: 4px solid #004aad;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#form-message {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: green;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  background: #f0f4ff;
+  padding: 10px;
+  border-left: 4px solid #004aad;
+  border-radius: 4px;
+}
+
+footer {
+  background: #00307a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .student-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .student-card img {
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-section form {
+    width: 100%;
+  }
+}
