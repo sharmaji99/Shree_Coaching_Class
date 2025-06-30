@@ -16,113 +16,121 @@
     <p>Unlock Your True Academic Potential!</p>
   </header>
 
-  <section class="success">
-    <h2><i class="fas fa-star"></i> Student Success Stories</h2>
-    <p>At Shree Coaching Classes, our dedicated approach leads to outstanding results.</p>
+  <div class="two-column">
+    <!-- Left Column -->
+    <div class="left-side">
+      <section class="success">
+        <h2><i class="fas fa-star"></i> Student Success Stories</h2>
+        <p>At Shree Coaching Classes, our dedicated approach leads to outstanding results.</p>
 
-    <div class="student-card">
-      <img src="Image/Garima.jpeg" alt="Garima Rathod" />
-      <div class="student-info">
-        <h3>Garima Rathod</h3>
-        <p><strong>Score:</strong> 87% – Class 10th Board</p>
-        <p><em>Maths: 90 | English: 90</em></p>
-      </div>
+        <div class="student-card">
+          <img src="Image/Garima.jpeg" alt="Garima Rathod" />
+          <div class="student-info">
+            <h3>Garima Rathod</h3>
+            <p><strong>Score:</strong> 87% – Class 10th Board</p>
+            <p><em>Maths: 90 | English: 90</em></p>
+          </div>
+        </div>
+
+        <div class="student-card">
+          <img src="Image/Divya.jpeg" alt="Divya Sharma" />
+          <div class="student-info">
+            <h3>Divya Sharma</h3>
+            <p><strong>Score:</strong> 83% – Class 10th Board</p>
+            <p><em>English: 87</em></p>
+          </div>
+        </div>
+
+        <div class="student-card">
+          <img src="Image/Ravina.jpeg" alt="Ravina Puri" />
+          <div class="student-info">
+            <h3>Ravina Puri</h3>
+            <p><strong>Score:</strong> 82% – Class 10th Board</p>
+            <p><em>Maths: 85</em></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us">
+        <h2><i class="fas fa-check-circle"></i> Why Choose Us?</h2>
+        <ul>
+          <li>✔️ Experienced and Qualified Faculty</li>
+          <li>✔️ Personalized Attention to Each Student</li>
+          <li>✔️ Weekly Tests and Performance Reports</li>
+          <li>✔️ Competitive Environment and Motivation</li>
+          <li>✔️ Affordable Fee Structure</li>
+        </ul>
+      </section>
+
+      <section class="faculty">
+        <h2><i class="fas fa-chalkboard-teacher"></i> Our Esteemed Faculty</h2>
+        <p><strong>Mr. Manish Pathak</strong><br>MA in English — 14 years of experience</p>
+        <p><strong>Mrs. Varsha Pathak</strong><br>MSc in Chemistry — 10 years of experience</p>
+      </section>
     </div>
 
-    <div class="student-card">
-      <img src="Image/Divya.jpeg" alt="Divya Sharma" />
-      <div class="student-info">
-        <h3>Divya Sharma</h3>
-        <p><strong>Score:</strong> 83% – Class 10th Board</p>
-        <p><em>English: 87</em></p>
-      </div>
+    <!-- Right Column -->
+    <div class="right-side">
+      <section class="results">
+        <h2><i class="fas fa-trophy"></i> Excellent Results Over the Years</h2>
+        <ul>
+          <li>📅 2024–25: Garima Rathod – 87%, Divya Sharma – 83%, Ravina Puri – 82%</li>
+          <li>📅 2023–24: Priyanka Gurjar – 85%, Anika Sen – 87%</li>
+          <li>📅 2022–23: Ankit Puri – 80%</li>
+          <li>📅 2021–22: Neha Sharma – 86%, Rohit Jain – 79%</li>
+          <li>📅 2020–21: Muskan Patel – 84%, Ravi Kushwah – 81%</li>
+          <li>📅 2019–20: Ritu Sen – 80%, Aditya Mishra – 82%</li>
+          <li>📅 2018–19: Kavita Yadav – 78%, Manoj Verma – 76%</li>
+        </ul>
+      </section>
+
+      <section class="form-section">
+        <h2><i class="fas fa-edit"></i> Admission Form</h2>
+        <form id="admissionForm" onsubmit="return handleSubmit(event)">
+          <input type="text" name="studentName" placeholder="Student Name" required />
+          <input type="text" name="fatherName" placeholder="Father's Name" required />
+          <input type="hidden" name="monthlyFee" id="monthlyFee">
+          <input type="hidden" name="annualFee" id="annualFee">
+
+          <select name="class" id="classSelect" required onchange="updateFees()">
+            <option value="">Select Class</option>
+            <option value="1">Class 1</option>
+            <option value="2">Class 2</option>
+            <option value="3">Class 3</option>
+            <option value="4">Class 4</option>
+            <option value="5">Class 5</option>
+            <option value="6">Class 6</option>
+            <option value="7">Class 7</option>
+            <option value="8">Class 8</option>
+            <option value="9">Class 9</option>
+            <option value="10">Class 10</option>
+            <option value="11">Class 11</option>
+            <option value="12">Class 12</option>
+          </select>
+
+          <div id="feeDetails" class="fee-info"></div>
+
+          <select name="feeType" required onchange="updateFeeAmounts()">
+            <option value="">Select Fee Type</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Annual">Annual (Discounted)</option>
+          </select>
+
+          <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{10}" required />
+          <button type="submit">Submit</button>
+        </form>
+        <p id="form-message"></p>
+      </section>
+
+      <section class="contact">
+        <h2><i class="fas fa-phone-alt"></i> Contact Us</h2>
+        <p><strong>Shree Coaching Classes</strong><br>
+          Krishna Shray, Dharola Road, Ward No 7,<br>
+          Nalkheda, Madhya Pradesh, 465445</p>
+        <p><strong>Phone:</strong> +91 9926757320</p>
+      </section>
     </div>
-
-    <div class="student-card">
-      <img src="Image/Ravina.jpeg" alt="Ravina Puri" />
-      <div class="student-info">
-        <h3>Ravina Puri</h3>
-        <p><strong>Score:</strong> 82% – Class 10th Board</p>
-        <p><em>Maths: 85</em></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="results">
-    <h2><i class="fas fa-trophy"></i> Excellent Results Over the Years</h2>
-    <ul>
-      <li>📅 2024–25: Garima Rathod – 87%, Divya Sharma – 83%, Ravina Puri – 82%</li>
-      <li>📅 2023–24: Priyanka Gurjar – 85%, Anika Sen – 87%</li>
-      <li>📅 2022–23: Ankit Puri – 80%</li>
-      <li>📅 2021–22: Neha Sharma – 86%, Rohit Jain – 79%</li>
-      <li>📅 2020–21: Muskan Patel – 84%, Ravi Kushwah – 81%</li>
-      <li>📅 2019–20: Ritu Sen – 80%, Aditya Mishra – 82%</li>
-      <li>📅 2018–19: Kavita Yadav – 78%, Manoj Verma – 76%</li>
-    </ul>
-  </section>
-
-  <section class="faculty">
-    <h2><i class="fas fa-chalkboard-teacher"></i> Our Esteemed Faculty</h2>
-    <p><strong>Mr. Manish Pathak</strong><br>MA in English — 14 years of experience</p>
-    <p><strong>Mrs. Varsha Pathak</strong><br>MSc in Chemistry — 10 years of experience</p>
-  </section>
-
-  <section class="why-us">
-    <h2><i class="fas fa-check-circle"></i> Why Choose Us?</h2>
-    <ul>
-      <li>✔️ Experienced and Qualified Faculty</li>
-      <li>✔️ Personalized Attention to Each Student</li>
-      <li>✔️ Weekly Tests and Performance Reports</li>
-      <li>✔️ Competitive Environment and Motivation</li>
-      <li>✔️ Affordable Fee Structure</li>
-    </ul>
-  </section>
-
-  <section class="form-section">
-    <h2><i class="fas fa-edit"></i> Admission Form</h2>
-    <form id="admissionForm" onsubmit="return handleSubmit(event)">
-      <input type="text" name="studentName" placeholder="Student Name" required />
-      <input type="text" name="fatherName" placeholder="Father's Name" required />
-      <input type="hidden" name="monthlyFee" id="monthlyFee">
-      <input type="hidden" name="annualFee" id="annualFee">
-
-      <select name="class" id="classSelect" required onchange="updateFees()">
-        <option value="">Select Class</option>
-        <option value="1">Class 1</option>
-        <option value="2">Class 2</option>
-        <option value="3">Class 3</option>
-        <option value="4">Class 4</option>
-        <option value="5">Class 5</option>
-        <option value="6">Class 6</option>
-        <option value="7">Class 7</option>
-        <option value="8">Class 8</option>
-        <option value="9">Class 9</option>
-        <option value="10">Class 10</option>
-        <option value="11">Class 11</option>
-        <option value="12">Class 12</option>
-      </select>
-
-      <div id="feeDetails" class="fee-info"></div>
-
-      <select name="feeType" required onchange="updateFeeAmounts()">
-        <option value="">Select Fee Type</option>
-        <option value="Monthly">Monthly</option>
-        <option value="Annual">Annual (Discounted)</option>
-      </select>
-
-      <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{10}" required />
-      <button type="submit">Submit</button>
-    </form>
-    <p id="form-message"></p>
-  </section>
-
-  <section class="contact">
-    <h2><i class="fas fa-phone-alt"></i> Contact Us</h2>
-    <p><strong>Shree Coaching Classes</strong><br>
-      Krishna Shray, Dharola Road, Ward No 7,<br>
-      Nalkheda, Madhya Pradesh, 465445</p>
-    <p><strong>Phone:</strong> +91 9926757320</p>
-  </section>
+  </div>
 
   <footer>
     <p>© 2025 Shree Coaching Classes. All rights reserved.</p>
