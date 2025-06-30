@@ -121,13 +121,24 @@ h2 {
   padding: 0;
 }
 
+/* Make Admission Form match Why Us on mobile */
+.form-section {
+  background: white;
+  padding: 30px 20px;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+
+/* Form inside the form-section */
 .form-section form {
-  max-width: 500px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 
 form input,
 form button,
