@@ -1,0 +1,4 @@
+[[redirects]]
+from  = "/*"
+to = "/resumeMain.html"
+status = 200
