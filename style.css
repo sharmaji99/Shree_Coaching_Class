@@ -105,3 +105,11 @@ form button:hover {
 .contact p, .faculty p {
   line-height: 1.6;
 }
+.fee-info {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #004aad;
+  font-size: 1rem;
+}
+
