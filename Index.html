@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shree Coaching Classes</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <h1>Shree Coaching Classes</h1>
     <p>Unlock Your True Academic Potential!</p>
   </header>
 
   <section class="success">
-  <h2>🎓 Student Success Stories</h2>
-  <p>At Shree Coaching Classes, our dedicated approach leads to outstanding results.</p>
+    <h2>🎓 Student Success Stories</h2>
+    <p>At Shree Coaching Classes, our dedicated approach leads to outstanding results.</p>
 
-  <div class="student-card">
-    <img src="Image/Garima.jpeg" alt="Garima Rathod">
-    <div class="student-info">
-      <h3>Garima Rathod</h3>
-      <p><strong>Score:</strong> 87% – Class 10th Board</p>
-      <p><em>Maths: 90 | English: 90</em></p>
+    <div class="student-card">
+      <img src="Image/Garima.jpeg" alt="Garima Rathod" />
+      <div class="student-info">
+        <h3>Garima Rathod</h3>
+        <p><strong>Score:</strong> 87% – Class 10th Board</p>
+        <p><em>Maths: 90 | English: 90</em></p>
+      </div>
     </div>
-  </div>
 
-  <div class="student-card">
-    <img src="Image/Divya.jpeg" alt="Divya Sharma">
-    <div class="student-info">
-      <h3>Divya Sharma</h3>
-      <p><strong>Score:</strong> 83% – Class 10th Board</p>
-      <p><em>English: 87</em></p>
+    <div class="student-card">
+      <img src="Image/Divya.jpeg" alt="Divya Sharma" />
+      <div class="student-info">
+        <h3>Divya Sharma</h3>
+        <p><strong>Score:</strong> 83% – Class 10th Board</p>
+        <p><em>English: 87</em></p>
+      </div>
     </div>
-  </div>
 
-  <div class="student-card">
-    <img src="Image/Ravina.jpeg" alt="Ravina Puri">
-    <div class="student-info">
-      <h3>Ravina Puri</h3>
-      <p><strong>Score:</strong> 82% – Class 10th Board</p>
-      <p><em>Maths: 85</em></p>
+    <div class="student-card">
+      <img src="Image/Ravina.jpeg" alt="Ravina Puri" />
+      <div class="student-info">
+        <h3>Ravina Puri</h3>
+        <p><strong>Score:</strong> 82% – Class 10th Board</p>
+        <p><em>Maths: 85</em></p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="results">
+    <h2>🏆 Excellent Results Over the Years</h2>
+    <ul>
+      <li>📅 2018–19: Kavita Yadav – 78%, Manoj Verma – 76%</li>
+      <li>📅 2019–20: Ritu Sen – 80%, Aditya Mishra – 82%</li>
+      <li>📅 2020–21: Muskan Patel – 84%, Ravi Kushwah – 81%</li>
+      <li>📅 2021–22: Neha Sharma – 86%, Rohit Jain – 79%</li>
+      <li>📅 2022–23: Ankit Puri – 80%</li>
+      <li>📅 2023–24: Priyanka Gurjar – 85%, Anika Sen – 87%</li>
+      <li>📅 2024–25: Garima Rathod – 87%, Divya Sharma – 83%, Ravina Puri – 82%</li>
+    </ul>
+  </section>
 
   <section class="faculty">
     <h2>👩‍🏫 Our Esteemed Faculty</h2>
-    <div>
-      <p><strong>Mr. Manish Pathak</strong><br>
-        Specialization: MA in English<br>
-        Experience: 14 years</p>
-      <p><strong>Mrs. Varsha Pathak</strong><br>
-        Specialization: MSc in Chemistry<br>
-        Experience: 10 years</p>
-    </div>
+    <p><strong>Mr. Manish Pathak</strong><br>MA in English — 14 years of experience</p>
+    <p><strong>Mrs. Varsha Pathak</strong><br>MSc in Chemistry — 10 years of experience</p>
+  </section>
+
+  <section class="form-section">
+    <h2>📝 Admission Form</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <input type="text" name="studentName" placeholder="Student Name" required />
+      <input type="text" name="fatherName" placeholder="Father's Name" required />
+      <input type="text" name="class" placeholder="Class" required />
+      <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{10}" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="form-message"></p>
   </section>
 
   <section class="contact">
     <h2>📍 Contact Us</h2>
     <p><strong>Shree Coaching Classes</strong><br>
-    Krishna Shray, Dharola Road, Ward No 7,<br>
-    Nalkheda, Madhya Pradesh, 465445</p>
+      Krishna Shray, Dharola Road, Ward No 7,<br>
+      Nalkheda, Madhya Pradesh, 465445</p>
     <p><strong>Phone:</strong> +91 9926757320</p>
   </section>
 
   <footer>
     <p>© 2025 Shree Coaching Classes. All rights reserved.</p>
   </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById("form-message").textContent = "✅ Thank you! Your details have been submitted.";
+      e.target.reset();
+      return false;
+    }
+  </script>
 </body>
 </html>

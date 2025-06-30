@@ -23,18 +23,7 @@ section {
 
 h2 {
   color: #004aad;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  background: #e9f0fa;
-  margin: 10px 0;
-  padding: 10px;
-  border-left: 5px solid #004aad;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -42,8 +31,6 @@ footer {
   padding: 15px;
   background: #004aad;
   color: white;
-  position: relative;
-  bottom: 0;
 }
 
 .student-card {
@@ -67,4 +54,54 @@ footer {
 .student-info h3 {
   margin: 0 0 5px;
   color: #004aad;
+}
+
+.results ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.results li {
+  background: #e9f0fa;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-left: 4px solid #004aad;
+  font-size: 1rem;
+}
+
+.form-section form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form button {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #004aad;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #00307a;
+}
+
+#form-message {
+  text-align: center;
+  color: green;
+  margin-top: 10px;
+}
+
+.contact p, .faculty p {
+  line-height: 1.6;
 }
