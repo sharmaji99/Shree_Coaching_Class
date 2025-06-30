@@ -9,6 +9,8 @@ const feeData = {
   8: { monthly: 900, annual: 5000 },
   9: { monthly: 1000, annual: 5500 },
   10: { monthly: 1200, annual: 6000 },
+  11: { monthly: 1300, annual: 6500 },
+  12: { monthly: 1400, annual: 7000 },
 };
 
 function updateFees() {
