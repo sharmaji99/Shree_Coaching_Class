@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background: #004aad;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #004aad;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #e9f0fa;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #004aad;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004aad;
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+
+.student-card {
+  display: flex;
+  align-items: center;
+  background-color: #f0f8ff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.student-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.student-info h3 {
+  margin: 0 0 5px;
+  color: #004aad;
+}
